@@ -46,7 +46,7 @@ data class Note(var noteId: Int = 0,
         return "$noteId: $noteTitle, Priority($notePriority), Category($noteCategory) Archived($archived) \n${listItems()}"
     }
 
-    fun checkNoteCOmpletionStatus(): Boolean{
+    fun checkNoteCompletionStatus(): Boolean{
         if (items.isNotEmpty()) {
             for (item in items) {
                 if (!item.isItemComplete) {
